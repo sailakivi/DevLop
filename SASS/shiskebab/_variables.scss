@@ -1,41 +1,41 @@
-$primary: #0f52e4;
-$secondary: #11f5a1 ;
-$error: #e00e43;
-$info: #f8c10b;
 
+// theme colors
+$primary: #326dee !default;
+$secondary: #1ac886 !default;
+$error: #d32752 !default;
+$info: #f6c31c !default;
+
+// color palette
 $colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "error": $error,
-    "info": $info,
+  "primary": $primary,
+  "secondary": $secondary,
+  "error": $error,
+  "info": $info,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffa600,
+  "purple": #9900ff,
+  "gray": #808080,
+  "black": black,
+  "white": white,
+) !default;
 
-    "blue": #0b0bb9,
-    "red": #af1c1c,
-    "yellow": #f1f116,
-    "green": #07fa28,
-    "orange": #ffae18,
-    "purple": #9e1ff3,
-    "gray": #706e6e,
-    "black": #000,
-    "white": #fff,
-);
+// spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
 
+// borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
 
-//@debug map-get($colors, "purple");
-//@debug map-has-key($colors, "secondary");
-//@debug map-remove($colors, "primary");
-//@debug map-merge($colors, ("pink": rgba(253, 42, 141, 0.8)));
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
 
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
-
-$base-border-thickness: 1px;
-$base-border-radius: 15px;
-
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-
-$base-font-size: 1rem;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.5;
-$font-size-xl: $base-font-size * 2;
-$font-size-xxl: $base-font-size * 3;
+// font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
