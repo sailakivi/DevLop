@@ -1,0 +1,85 @@
+.App{
+    text-align: center;
+    background-color: black;
+    margin: 20px;
+    width: 300px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.App-logo{
+    height: 40vmin;
+}
+
+@media(prefers-reduced-motion: no-preference){
+    .App-logo{
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header{
+    background-color: green;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+}
+
+.App-link{
+    color: blue;
+}
+
+button{
+    font-size: 0.8em;
+    padding: 10px;
+    margin: 0px 15px;
+    border-radius: 10px;
+}
+
+.icon{
+    height: 8px;
+    margin-right: 10px;
+}
+
+.email{
+    background-color: white;
+}
+
+.linkedin{
+    background-color: turquoise;
+    color: white;
+}
+
+.paakuva{
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+h2{
+    font-size: 17px;
+    color: yellow;
+    margin: 0px;
+}
+
+h3{
+    font-size: 14px;
+    margin: 5px 0px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+p{
+    color: white;
+    margin: 20px;
+    font-size: 8px;
+}
