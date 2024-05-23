@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+<title>jQuery 10. Harjoitus.</title>
+
+<style>
+   
+</style>
+
+</head>
+<body>
+
+    <p>PHP Exercises</p>
+    <p>Python Exercises</p>
+    <p>JavaScript Exercises</p>
+    <p>jQuery Exercises</p>
+    
+<script>
+
+    $(document).ready(function() {
+        $("p").each(function(){
+            var pdata = $(this);
+            pdata.html( pdata.html().replace(/(^\w+)/,"<strong>$1</strong>") );
+        });
+    });
+    
+</script>
+
+</body>
+</html>

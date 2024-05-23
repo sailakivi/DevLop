@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 45. Harjoitus.</title>
+
+<style>
+
+</style>
+
+</head>
+<body>
+
+    <a class="external-link" href="http://example.com">Visit w3resource</a>
+
+    <p><input id="button1" type="button" value="Change link URL"/></p>
+
+<script>
+    
+    $("#button1").click(function(){ 
+        var confirmation = confirm("Do you want to change the link URL?");
+        if (confirmation) {
+            $(".external-link").attr("href", "https://www.w3resource.com/");
+            console.log("Link URL has been changed to: https://www.w3resource.com/");
+        } else {
+            console.log("Link URL change cancelled.");
+        }
+    });
+
+</script>
+
+</body>
+</html>

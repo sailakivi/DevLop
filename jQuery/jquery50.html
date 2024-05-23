@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 50. Harjoitus.</title>
+
+<style>
+
+</style>
+
+</head>
+<body>
+
+    First name: <input id="id1" type="text" name="first">
+    <button id="button1">Click to add an attribute</button>
+
+<script>
+    
+    $(document).ready(function(){ 
+        $("#button1").click(function(){ 
+        $("#id1").prop("value", "input your name here");
+        console.log("Value attribute changed")
+        });
+    });
+
+</script>
+
+</body>
+</html>

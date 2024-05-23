@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Neljäs Harjoitus.</title>
+
+    <input id="accept" name="accept" type="checkbox" value="y">I accept<br></input>
+    <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit"></input>
+</head>
+<body>
+
+<script>
+    $('#accept').click(function() {
+	if ($('#submitbtn').is(':disabled')) {
+    	$('#submitbtn').removeAttr('disabled');
+    } else {
+    	$('#submitbtn').attr('disabled', 'disabled');
+    }
+});
+</script>
+
+</body>
+</html>

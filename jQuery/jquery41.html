@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 41. Harjoitus.</title>
+
+<style>
+
+table, th, td {
+    border: 2px solid 
+    black;
+}
+
+</style>
+
+</head>
+<body>
+
+    <table id="table">
+
+        <tr>
+
+         <th>Firstname</th>
+         <th>Lastname</th>
+
+         </tr>
+
+         <tr id="row1">
+
+         <td>Rahul</td>
+         <td>Sethi</td>
+
+         </tr>
+
+         <tr id="row2">
+
+          <td>Sara</td>
+          <td>Rayy</td>
+
+          </tr>
+
+          <tr id="row3">
+
+            <td>Sheldon</td>
+            <td>Cooper</td>
+
+          </tr>
+
+          </table>
+
+          <p> <input id="button1" type="button" value="Click to remove 3rd Row." /></p>
+
+<script>
+    
+    $(document).ready(function(){ 
+    $("#button1").click(function(){ 
+    $("#row3").remove(); 
+    });
+    });
+
+</script>
+
+</body>
+</html>

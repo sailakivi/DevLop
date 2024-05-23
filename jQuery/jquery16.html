@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 16. Harjoitus.</title>
+
+<style>
+   
+    p span{
+        text-decoration: underline;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <p>The best way we learn anything is by practice and exercise questions. Here you have the opportunity to practice the Java programming language concepts by solving the exercises starting from basic to more complex exercises.</p>
+
+<script>
+    
+    $('p').each(function() {
+
+    var text_words = $(this).text().split(' ');
+
+	$(this).empty().html(function() {
+
+		for (i = 0; i < text_words.length; i++) {
+			if (i === 0) {
+				$(this).append('<span>' + text_words[i] + '</span>');
+			} else {
+				$(this).append(' <span>' + text_words[i] + '</span>');
+			}
+		}
+	
+	});
+
+    });
+
+</script>
+
+</body>
+</html>

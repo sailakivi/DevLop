@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+<title>jQuery Seitsemäs Harjoitus.</title>
+
+<style>
+.table_style {
+	    width: 500px;
+	    margin: 0px auto;
+	}
+	table{
+	    width: 100%;
+	    border-collapse: collapse;
+	}
+	table tr td{
+	    width: 50%;
+	    border: 1px solid 
+        #08e913;
+	    padding: 5px;
+	}
+	table tr th{
+	    border: 1px solid 
+        #08e913;
+	    padding: 5px;
+	}
+	.zebra{
+	    background-color:  
+        #08e913;
+	}
+	</style>
+
+</head>
+<body>
+
+    <div class="table_style">
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Marks in Science</th>
+            </tr>
+            <tr>
+                <td>Janet</td>
+                <td>85.00</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>92.00</td>
+            </tr>
+            <tr>
+                <td>Arthur</td>
+                <td>79.00</td>
+            </tr>
+            <tr>
+                <td>Bill</td>
+                <td>82.00</td>
+            </tr>
+        </table>
+    </div>
+
+<script>
+
+    $(document).ready(function(){
+	$("tr:odd").addClass("zebra");
+});
+
+</script>
+
+</body>
+</html>

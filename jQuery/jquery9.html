@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+<title>jQuery Yhdeksäs Harjoitus.</title>
+
+<style>
+    textarea
+    {
+        display: block;
+        margin: 1em 0;
+    }
+</style>
+
+</head>
+<body>
+
+<form>
+
+    <label>Maximum 15 characters</label>
+    <textarea id="textarea" maxlength="15"></textarea>
+    <span id="rchars">15</span> characters remaining
+
+</form>
+    
+<script>
+
+    var maxLength = 15;
+    $('textarea').keyup(function() {
+    var textlen = maxLength - $(this).val().length;
+     $('#rchars').text(textlen);
+    });
+
+</script>
+
+</body>
+</html>

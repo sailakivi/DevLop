@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 13. Harjoitus.</title>
+
+<style>
+   
+    .color-div{
+        width: 100px;
+        height: 20px;
+        margin: 5px;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div id="divSelect"></div>
+	  
+<script>
+    
+    var colors = { "color1": "Red", "color2": "Green", 'color3': "Blue" };
+
+    $.each(colors, function(key, value) {
+    $('#divSelect').append($("<div/>", {
+        text: value,
+        class: "color-div",
+        css:{
+            backgroundColor: value
+        }
+    }));
+    });
+
+</script>
+
+</body>
+</html>

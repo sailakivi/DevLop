@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 48. Harjoitus.</title>
+
+<style>
+
+
+
+</style>
+
+</head>
+<body>
+
+    <select>
+
+        <option id="opt1" value="red">Red</option>
+        <option id="opt2" value="green">Green</option>
+        <option id="opt3" value="white">White</option>
+        <option id="opt4" value="blue">Blue</option>
+        
+    </select>
+
+<script>
+    
+    var option = $("<select></select>").attr("red", "orange").text("Orange");
+    $("#opt2").empty().append(option);
+
+</script>
+
+</body>
+</html>

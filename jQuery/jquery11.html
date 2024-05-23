@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+<title>jQuery 11. Harjoitus.</title>
+
+<style>
+   
+</style>
+
+</head>
+<body>
+
+    <p>Create a division using jQuery with style tag.</p>
+    <input type="button" value="Click to add new division" onclick="new_div()"/>
+
+<script>
+    function new_div() {
+    $(document).ready(function() {
+    var test = {
+    id: "div",
+    class: "divclass",
+    css: {
+      "color": "Green"
+    }
+    };
+    var $div = $("<div>", test);
+    $div.html("New Division");
+    $("body").append($div);
+    });
+    }
+
+</script>
+
+</body>
+</html>

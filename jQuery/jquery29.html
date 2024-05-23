@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 29. Harjoitus.</title>
+
+<style>
+  
+</style>
+
+</head>
+<body>
+
+    
+
+<script>
+    
+    var colors = ["Red", "Green", "White", "black", "Yellow"];
+    var itemToRemove = "White";
+
+    console.log("Array before removing the element:");
+    console.table(colors);
+
+    if (colors.includes(itemToRemove)) {
+        colors = $.grep(colors, function(value) {
+            return value !== itemToRemove;
+        });
+
+        console.log("Array after removing '" + itemToRemove + "':");
+        console.table(colors);
+        } else {
+        console.log("'" + itemToRemove + "' not found in the array.");
+        }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Eka Harjoitus.</title>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+<body>
+
+<p id="click-me">Click me</p>
+<div id="output"></div>
+
+<script>
+    $(document).ready(function() {
+        if (typeof jQuery == 'undefined') {
+            console.log('jQuery is not loaded.');
+        } else {
+            console.log('jQuery is loaded.');
+            $('#click-me').click(function(event) {
+                $('#output').append('This is a click Event<br>');
+            });
+            $('#click-me').dblclick(function(event) {
+                $('#output').append('This is a double-click Event<br>');
+            });
+        }
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 19. Harjoitus.</title>
+
+<style>
+  
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1{
+        margin: 10px;
+        padding: 0 5px;
+        font-size: 16px;
+        border: 2px double #f11a1a;
+    }
+
+</style>
+
+</head>
+<body>
+
+   <h1 id="Input">Jquery Exercise</h1>
+
+    <input type="button" value="Remove Border" onclick="remove_style()">
+
+<script>
+    
+    function remove_style() {
+    $("#Input").css("border", "0");
+    }
+
+</script>
+
+</body>
+</html>

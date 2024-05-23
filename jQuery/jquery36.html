@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<meta charset="UTF-8">
+
+<title>jQuery 36. Harjoitus.</title>
+
+<style>
+  
+p.left {
+    text-align: left;
+    color: 
+    rgb(16, 214, 92);
+}
+
+p.large {
+    font-size: 200%;
+}
+
+</style>
+
+</head>
+<body>
+
+    <p id="id1"  class="left"> jQuery Exercise</p>
+
+    <input id="button1" type="button" value="Click to change the Class" />
+
+<script>
+    
+    $(document).ready(function(){ 
+    $("#button1").click(function(){   $('#id1').removeClass('left').addClass('large');       
+    });
+    });
+
+</script>
+
+</body>
+</html>
